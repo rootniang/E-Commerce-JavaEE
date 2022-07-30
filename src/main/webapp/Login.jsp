@@ -18,31 +18,20 @@
 		<h2>Bienvenu(e) sur Jaaba Store !</h2>
 		<div class="container" id="container">
 			<div class="form-container sign-up-container">
-				<form action="#">
+				<form action="Inscription" method="post" enctype="application/x-www-form-urlencoded">
 					<h1>Creer un compte</h1>
-					<div class="social-container">
-						<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-						<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-						<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-					</div>
-					<span>ou utilise ton mail</span>
-					<input type="text" placeholder="Name" />
-					<input type="email" placeholder="Email" />
-					<input type="password" placeholder="Password" />
+					<input type="text" name="nom" placeholder="Nom" />
+					<input type="text" name="prenom" placeholder="Prenom" />
+					<input type="text" name="login" placeholder="Login" />
+					<input type="password" name="password" placeholder="Password" />
 					<button>Sign Up</button>
 				</form>
 			</div>
 			<div class="form-container sign-in-container">
-				<form action="#">
+				<form action="Authentification" method="post" enctype="application/x-www-form-urlencoded">
 					<h1>Connexion</h1>
-					<div class="social-container">
-						<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-						<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-						<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-					</div>
-					<span>ou utilise ton compte</span>
-					<input type="email" placeholder="Email" />
-					<input type="password" placeholder="Password" />
+					<input type="text" name="login" placeholder="Login" />
+					<input type="password" name="password" placeholder="Password" />
 					<a href="#">Mot de passe oublie?</a>
 					<button>Connexion</button>
 				</form>
